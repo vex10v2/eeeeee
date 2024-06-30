@@ -1,0 +1,8 @@
+local part = script.Parent
+part.Touched:Connect(function(hitPart)
+    if hitPart.Parent:FindFirstChild("Humanoid") then
+        local character = hitPart.Parent
+        local player = game.Players:GetPlayerFromCharacter(character)
+        player:Kick("You have left the playable bounds")
+    end
+end)
