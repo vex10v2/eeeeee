@@ -1,0 +1,9 @@
+ -- repeat loops will continue to run as the condition evaluates to false
+repeat print("hello my names monkey")
+wait(3)
+print("your pc is now hacked")
+wait(2)
+
+     wait() -- same reason as the wait in the while loop
+until false
+
